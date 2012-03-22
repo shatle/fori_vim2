@@ -97,10 +97,6 @@ h2 rubycomplete
 install details
 copy to .vim/autoload or your global runtime autoload directory.
 
-h2 javascriptcomplete
-install details
-Copy this file into ~/.vim/autoload
-
 h2 rails
 install details
 Extract the zip file to ~/.vim (or vimfiles on Windows).  To use the help, see :help add-local-help.  In a nutshell, :helptags ~/.vim/doc. 

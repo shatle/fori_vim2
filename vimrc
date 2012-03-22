@@ -7,7 +7,7 @@ set nu
 syntax on
 
 set autoindent
-set cindent
+set smartindent
 
 "snipMate need
 :filetype plugin on
@@ -25,6 +25,17 @@ let g:neocomplcache_enable_at_startup = 1
 
 "rubycomplete
 autocmd FileType ruby,eruby setlocal omnifunc=rubycomplete#Complete
+
+"folding  syntax
+set foldmethod=syntax
+set foldlevelstart=1
+
+let ruby_fold = 1 "ruby
+let javaScript_fold = 1 "js
+let sh_fold_enabled =1 "sh
+
+"pathogen.vim need
+"call pathogen#infect()
 
 "NERDTree
 map <F8> :NERDTree <CR>
