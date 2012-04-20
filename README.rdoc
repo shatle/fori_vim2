@@ -1,9 +1,9 @@
 = fori_vim
 it is a conf for i(me)
 
-h1 others
+= others
 
-h2 ctags
+== ctags
 install details
 Copy ctags.vim to your plugin directory. 
 
@@ -35,13 +35,13 @@ Other configuration variables you may want to change are:
         Set to 0 if you don't want the tags database rebuilt each time 
         the buffer is written.
 
-h2 SuperTab
+== SuperTab
 install details
 1. Download supertab.vba to any directory. 
 2. Open the file in vim ($ vim supertab.vba). 
 3. Source the file (:so %).
 
-h2 Taglist
+== Taglist
 install details
 1. Download the taglist.zip file and unzip the files to the $HOME/.vim or the 
     $HOME/vimfiles or the $VIM/vimfiles directory. After this step, you should 
@@ -67,7 +67,7 @@ install details
     window. You can use the ":help taglist" command to get more information 
     about using the taglist plugin. 
 
-h2 autocomplpop
+== autocomplpop
 INSTALLATION                                                *acp-installation* 
 
 Put all files into your runtime directory. If you have the zip file, extract 
@@ -86,18 +86,18 @@ directory, put the files into new directory and just add the directory path to
 And then update your help tags files to enable fuzzyfinder help. See 
 |add-local-help| for details. 
 
-h2 neocomplcache
+== neocomplcache
 install details
 1: Edit downloaded neocomplcache-*.vba file by Vim and execute ":so %" command. 
 2: Execute :NeoComplCacheEnable command or 
 let g:neocomplcache_enable_at_startup = 1 
 in your .vimrc. 
 
-h2 rubycomplete
+== rubycomplete
 install details
 copy to .vim/autoload or your global runtime autoload directory.
 
-h2 rails
+== rails
 install details
 Extract the zip file to ~/.vim (or vimfiles on Windows).  To use the help, see :help add-local-help.  In a nutshell, :helptags ~/.vim/doc. 
 
@@ -105,7 +105,7 @@ For details, see :help rails
 
 If you have issues with crashing on tab complete, upgrade Vim to 7.1.147 or newer.  Ubuntu had a release that included a Vim version with this bug.
 
-h2 snipMate
+== snipMate
 install details
 unzip snipMate.zip -d ~/.vim (or equivalent, e.g. $HOME\vimfiles on Windows) 
 
@@ -115,7 +115,7 @@ NOTE: remember to add ":filetype plugin on" to your .vimrc, otherwise snippets w
 
 Remember to run ":helptags ~/.vim/doc" to enable the help.
 
-h2 NERDTree
+== NERDTree
 install details
 Unzip the archive into your ~/.vim directory. 
 That should put NERD_tree.vim in ~/.vim/plugin and NERD_tree.txt in ~/.vim/doc. 
