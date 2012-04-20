@@ -1,0 +1,126 @@
+= fori_vim
+it is a conf for i(me)
+
+h1 others
+
+h2 ctags
+install details
+Copy ctags.vim to your plugin directory. 
+
+If the ctags program is not in your PATH, you will need to add the following to your vimrc: 
+
+    let g:ctags_path=<path to your ctags> 
+
+and to enable the display of function names in the status line, you will need to add this: 
+
+    let g:ctags_statusline=1 
+
+Other configuration variables you may want to change are: 
+
+    g:ctags_args 
+        Additional arguments to the ctags program. 
+
+    g:ctags_title 
+        Set to 1 if you want the function name also displayed in the title bar. 
+        This is the default, but if g:ctags_statusline is set to 1, this must also be 
+        set to one to show the function name in the title bar. Otherwise, the 
+        function name appears only in the status line. 
+
+    generate_tags 
+        Set to 1 if you want the script to be started automatically for the supported 
+        file types (actually file extensions). Otherwise the script must be started 
+        manually with the CTAGS command. 
+
+    g:ctags_regenerate 
+        Set to 0 if you don't want the tags database rebuilt each time 
+        the buffer is written.
+
+h2 SuperTab
+install details
+1. Download supertab.vba to any directory. 
+2. Open the file in vim ($ vim supertab.vba). 
+3. Source the file (:so %).
+
+h2 Taglist
+install details
+1. Download the taglist.zip file and unzip the files to the $HOME/.vim or the 
+    $HOME/vimfiles or the $VIM/vimfiles directory. After this step, you should 
+    have the following two files (the directory structure should be preserved): 
+
+         plugin/taglist.vim - main taglist plugin file 
+         doc/taglist.txt    - documentation (help) file 
+
+   Refer to the |add-plugin|, |add-global-plugin| and |runtimepath| Vim 
+   help pages for more details about installing Vim plugins. 
+2. Change to the $HOME/.vim/doc or $HOME/vimfiles/doc or $VIM/vimfiles/doc 
+    directory, start Vim and run the ":helptags ." command to process the 
+    taglist help file. Without this step, you cannot jump to the taglist help 
+    topics. 
+3. If the exuberant ctags utility is not present in your PATH, then set the 
+    Tlist_Ctags_Cmd variable to point to the location of the exuberant ctags 
+    utility (not to the directory) in the .vimrc file. 
+4. If you are running a terminal/console version of Vim and the terminal 
+    doesn't support changing the window width then set the 
+    'Tlist_Inc_Winwidth' variable to 0 in the .vimrc file. 
+5. Restart Vim. 
+6. You can now use the ":TlistToggle" command to open/close the taglist 
+    window. You can use the ":help taglist" command to get more information 
+    about using the taglist plugin. 
+
+h2 autocomplpop
+INSTALLATION                                                *acp-installation* 
+
+Put all files into your runtime directory. If you have the zip file, extract 
+it to your runtime directory. 
+
+You should place the files as follows: 
+> 
+        <your runtime directory>/plugin/acp.vim 
+        <your runtime directory>/doc/acp.txt 
+        ... 
+< 
+If you disgust to jumble up this plugin and other plugins in your runtime 
+directory, put the files into new directory and just add the directory path to 
+'runtimepath'. It's easy to uninstall the plugin. 
+
+And then update your help tags files to enable fuzzyfinder help. See 
+|add-local-help| for details. 
+
+h2 neocomplcache
+install details
+1: Edit downloaded neocomplcache-*.vba file by Vim and execute ":so %" command. 
+2: Execute :NeoComplCacheEnable command or 
+let g:neocomplcache_enable_at_startup = 1 
+in your .vimrc. 
+
+h2 rubycomplete
+install details
+copy to .vim/autoload or your global runtime autoload directory.
+
+h2 rails
+install details
+Extract the zip file to ~/.vim (or vimfiles on Windows).  To use the help, see :help add-local-help.  In a nutshell, :helptags ~/.vim/doc. 
+
+For details, see :help rails 
+
+If you have issues with crashing on tab complete, upgrade Vim to 7.1.147 or newer.  Ubuntu had a release that included a Vim version with this bug.
+
+h2 snipMate
+install details
+unzip snipMate.zip -d ~/.vim (or equivalent, e.g. $HOME\vimfiles on Windows) 
+
+Keep in mind this will overwrite any files included with older versions of snipMate, including the default *.snippets files for the included filetypes. If you don't want your snippets overwritten, just name them name them differently than the default snippets, e.g. c-mysnips.snippets. 
+
+NOTE: remember to add ":filetype plugin on" to your .vimrc, otherwise snippets will not work! This is one of the most common issue new users face when trying snipMate. 
+
+Remember to run ":helptags ~/.vim/doc" to enable the help.
+
+h2 NERDTree
+install details
+Unzip the archive into your ~/.vim directory. 
+That should put NERD_tree.vim in ~/.vim/plugin and NERD_tree.txt in ~/.vim/doc. 
+
+Run :helptags. 
+
+Go :help NERD_tree.txt for the help page. 
+
