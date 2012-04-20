@@ -1,3 +1,4 @@
+set encoding=utf-8
 "tab's space
 set tabstop=2
 
