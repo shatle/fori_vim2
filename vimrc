@@ -1,3 +1,6 @@
+"u should create a filename: ~/.vimrc, 
+" and content is: source ~/.vim/vimrc 
+"
 set encoding=utf-8
 "tab's space
 set tabstop=2
