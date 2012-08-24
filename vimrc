@@ -11,7 +11,7 @@ set nu
 syntax on
 
 set autoindent
-set smartindent
+"set smartindent
 
 "snipMate need
 :filetype plugin on
@@ -43,3 +43,7 @@ let sh_fold_enabled =1 "sh
 
 "NERDTree
 map <F8> :NERDTree <CR>
+
+"NERDCommenter
+let mapleader=","
+        
