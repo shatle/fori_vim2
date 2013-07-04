@@ -133,6 +133,3 @@ mv ./fori_vim2 ~/.vim
 cd ~/.vim 
 cp vimrc ../.vimrc
 ```
-
-
-```
