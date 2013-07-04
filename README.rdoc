@@ -124,3 +124,15 @@ Run :helptags.
 
 Go :help NERD_tree.txt for the help page. 
 
+== Setup
+
+```
+sudo apt-get install ctags 
+git clone https://github.com/shatle/fori_vim2 
+mv ./fori_vim2 ~/.vim
+cd ~/.vim 
+cp vimrc ../.vimrc
+```
+
+
+```
